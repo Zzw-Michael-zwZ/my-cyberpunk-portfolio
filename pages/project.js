@@ -19,7 +19,7 @@ const Project = (props) => {
           <article className="project-project-container">
             <img
               alt="omniCalc"
-              src="/playground_assets/omni_homgpage.webp"
+              src="/images/omni_homgpage.webp"
               className="project-project-image"
             />
             <div className="project-project-text-container">
@@ -45,12 +45,12 @@ const Project = (props) => {
                 </span>
                 <img
                   alt="Vector7968"
-                  src="/playground_assets/vector7968-8hkm.svg"
+                  src="/images/vector7968-8hkm.svg"
                   className="project-vector"
                 />
                 <img
                   alt="Vector7968"
-                  src="/playground_assets/vector7968-8hkm.svg"
+                  src="/images/vector7968-8hkm.svg"
                   className="project-vector1"
                 />
               </div>

@@ -185,10 +185,10 @@ const Navbar = (props) => {
 Navbar.defaultProps = {
   rootClassName: "",
   home_alt: "homeI627",
-  folder_src: "/playground_assets/folderi627-xvm5.svg",
+  folder_src: "/images/folderi627-xvm5.svg",
   person_alt: "personI627",
-  person_src: "/playground_assets/personi627-kvcm.svg",
-  home_src: "/playground_assets/homei627-wecnj.svg",
+  person_src: "/images/personi627-kvcm.svg",
+  home_src: "/images/homei627-wecnj.svg",
   folder_alt: "folderI627",
 };
 
