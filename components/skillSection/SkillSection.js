@@ -100,8 +100,8 @@ const SkillSection = (props) => {
             <div className="home-container51"></div>
             <div className="home-container52"></div>
           </div>
-          {skillData.map((skill) => {
-            return <SkillContainer {...skill} />;
+          {skillData.map((skill, index) => {
+            return <SkillContainer key={skill.name + index} {...skill} />;
           })}
         </div>
         <h1 className="home-text72">CHARACTER SKILLS</h1>
