@@ -4,17 +4,31 @@ import SkillContainer from "./SkillContainer";
 const skillData = [
   {
     name: "javascript",
-    icon: "/",
-    rating: 5,
-    description: "Hi mom",
+    icon: "/images/javascript.svg",
+    rating: 4,
+    description: "Most used and preferred programming language",
     absolutePosition: [15, 275],
   },
   {
-    name: "javascript",
+    name: "Figma",
     icon: "/",
     rating: 5,
     description: "Hi mom",
-    absolutePosition: [0, 0],
+    absolutePosition: [200, 126],
+  },
+  {
+    name: "NextJS",
+    icon: "/",
+    rating: 5,
+    description: "Hi mom",
+    absolutePosition: [15, -336],
+  },
+  {
+    name: "Html/Css",
+    icon: "/",
+    rating: 5,
+    description: "Hi mom",
+    absolutePosition: [200, -180],
   },
 ];
 const SkillSection = (props) => {
@@ -89,120 +103,6 @@ const SkillSection = (props) => {
           {skillData.map((skill) => {
             return <SkillContainer {...skill} />;
           })}
-
-          <div className="home-skill4">
-            <img
-              alt="Vector4I672"
-              src="/images/skillContainer.svg"
-              className="home-vector41"
-            />
-            <span className="home-text56">
-              <span>
-                Most used and preferred programming language
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: " ",
-                  }}
-                />
-              </span>
-            </span>
-            <span className="home-text58">
-              <span>Javascript</span>
-            </span>
-            <div className="home-js1"></div>
-            <div className="home-group71">
-              <span className="home-text60">4</span>
-              <span className="home-text61">5</span>
-              <img
-                alt="Line2I672"
-                src="/images/blueDivideLine.svg"
-                className="home-line21"
-              />
-            </div>
-            <img
-              alt="Rectangle13I672"
-              src="/images/redRectangle.png"
-              className="home-rectangle131"
-            />
-          </div>
-          <div className="home-skill3">
-            <img
-              alt="Vector4I672"
-              src="/images/skillContainer.svg"
-              className="home-vector42"
-            />
-            <span className="home-text62">
-              <span>
-                Most used and preferred programming language
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: " ",
-                  }}
-                />
-              </span>
-            </span>
-            <span className="home-text64">
-              <span>Javascript</span>
-            </span>
-            <div className="home-js2"></div>
-            <div className="home-group72">
-              <img
-                alt="VectorI672"
-                src="https://play.teleporthq.io/static/svg/placeholders/no-image.svg"
-                className="home-vector2"
-              />
-              <span className="home-text66">4</span>
-              <span className="home-text67">5</span>
-              <img
-                alt="Line2I672"
-                src="/images/blueDivideLine.svg"
-                className="home-line22"
-              />
-            </div>
-            <img
-              alt="Rectangle13I672"
-              src="/images/redRectangle.png"
-              className="home-rectangle132"
-            />
-          </div>
-          <div className="home-skill1">
-            <img
-              alt="Vector4I672"
-              src="/images/skillContainer.svg"
-              className="skillContainerSVGBG"
-            />
-            <span className="home-skill-name">
-              <span>Javascript</span>
-            </span>
-            <div className="home-skill-score">
-              <img
-                alt="VectorI672"
-                src="/images/skillContainer.svg"
-                className="home-vector3"
-              />
-              <div className="home-container53">
-                <span className="home-text69">3</span>
-                <div className="home-container54"></div>
-                <span className="home-text70">5</span>
-              </div>
-              <img
-                alt="Line2I672"
-                src="/images/blueDivideLine.svg"
-                className="home-line23"
-              />
-            </div>
-            <span className="home-skill-desc">
-              <span>
-                Most used and preferred programming language
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: " ",
-                  }}
-                />
-              </span>
-            </span>
-            <div className="skillContainerRedBlock"></div>
-          </div>
         </div>
         <h1 className="home-text72">CHARACTER SKILLS</h1>
         <a href="#statsContentContainer" className="home-nav-button navBlock">

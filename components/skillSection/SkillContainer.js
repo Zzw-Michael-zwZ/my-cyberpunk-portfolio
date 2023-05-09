@@ -17,7 +17,7 @@ const SkillContainerSVG = () => (
 );
 
 const SkillContainer = (props) => {
-  const { name, absolutePosition } = props;
+  const { name, icon, rating, description, absolutePosition } = props;
   return (
     <div
       className="skillContainer"
@@ -25,21 +25,17 @@ const SkillContainer = (props) => {
     >
       <SkillContainerSVG />
       <div className="home-skill-name">
-        <div>Javascript</div>
+        <div>{name}</div>
       </div>
       <div className="skillScoreContainer">
-        <img
-          alt="javascriptIcon"
-          src="/images/javascript.svg"
-          className="home-vector"
-        />
-        <div className="home-text54">4</div>
+        <img alt={name} src={icon} className="home-vector" />
+        <div className="home-text54">{rating}</div>
         <hr className="home-line" />
         <div className="home-text55">5</div>
       </div>
 
       <div className="home-skill-desc">
-        <div>Most used and preferred programming language</div>
+        <div>{description}</div>
       </div>
       <hr className="skillContainerRedBlock" />
     </div>
