@@ -11,23 +11,23 @@ const skillData = [
   },
   {
     name: "Figma",
-    icon: "/",
-    rating: 5,
-    description: "Hi mom",
+    icon: "/images/figma_icon.svg",
+    rating: 4,
+    description: "Primary web dev tool",
     absolutePosition: [200, 126],
   },
   {
     name: "NextJS",
-    icon: "/",
-    rating: 5,
-    description: "Hi mom",
+    icon: "/images/next_icon.svg",
+    rating: 4,
+    description: "Primary react framework",
     absolutePosition: [15, -336],
   },
   {
     name: "Html/Css",
-    icon: "/",
-    rating: 5,
-    description: "Hi mom",
+    icon: "/images/code_icon.svg",
+    rating: 4,
+    description: "Estimated 800 hours",
     absolutePosition: [200, -180],
   },
 ];
@@ -38,6 +38,7 @@ const SkillSection = (props) => {
         id="skillsContentContainer"
         className="home-skills-content-container glassBox"
       >
+        {/* if mobile remove this */}
         <div className="home-placeholder">
           <div className="home-container04">
             <span className="home-text48">

@@ -28,7 +28,9 @@ const SkillContainer = (props) => {
         <div>{name}</div>
       </div>
       <div className="skillScoreContainer">
-        <img alt={name} src={icon} className="home-vector" />
+        <div className="home-vector">
+          <img alt={name} src={icon} />
+        </div>
         <div className="home-text54">{rating}</div>
         <hr className="home-line" />
         <div className="home-text55">5</div>
