@@ -45,20 +45,7 @@ const SkillSection = (props) => {
               <span>Skill Tree</span>
             </span>
           </div>
-          <div className="home-electric-lines1">
-            <div className="home-container05"></div>
-            <div className="home-container06"></div>
-            <div className="home-container07"></div>
-            <div className="home-container08"></div>
-            <div className="home-container09"></div>
-            <div className="home-container10"></div>
-            <div className="home-container11"></div>
-            <div className="home-container12"></div>
-            <div className="home-container13"></div>
-            <div className="home-container14"></div>
-            <div className="home-container15"></div>
-            <div className="home-container16"></div>
-          </div>
+
           <div className="home-electric-lines2">
             <div className="home-container17"></div>
             <div className="home-container18"></div>
@@ -102,7 +89,13 @@ const SkillSection = (props) => {
             <div className="home-container52"></div>
           </div>
           {skillData.map((skill, index) => {
-            return <SkillContainer key={skill.name + index} {...skill} />;
+            return (
+              <SkillContainer
+                key={skill.name + index}
+                order={index + 1}
+                {...skill}
+              />
+            );
           })}
         </div>
         <h1 className="home-text72">CHARACTER SKILLS</h1>

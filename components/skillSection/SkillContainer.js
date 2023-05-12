@@ -1,4 +1,4 @@
-import React from "react";
+import css from "./electricLines.module.css";
 
 const SkillContainerSVG = () => (
   <svg
@@ -16,8 +16,30 @@ const SkillContainerSVG = () => (
   </svg>
 );
 
+const ElectricLines = ({ order }) => (
+  <div
+    className={`${css.electricLinesContainer} ${
+      css[`electricLinesContainer${order}`]
+    }`}
+  >
+    <div className={`${css.electricLine} ${css.Line1} `}></div>
+    <div className={`${css.electricLine} ${css.Line2} `}></div>
+    <div className={`${css.electricLine} ${css.Line3} `}></div>
+    <div className={`${css.electricLine} ${css.Line4} `}></div>
+    <div className={`${css.electricLine} ${css.Line5} `}></div>
+    <div className={`${css.electricLine} ${css.Line6} `}></div>
+    <div className={`${css.electricLine} ${css.Line7} `}></div>
+    <div className={`${css.electricLine} ${css.Line8} `}></div>
+    <div className={`${css.electricLine} ${css.Line9} `}></div>
+    <div className={`${css.electricLine} ${css.Line10} `}></div>
+    <div className={`${css.electricLine} ${css.Line11} `}></div>
+    <div className={`${css.electricLine} ${css.Line12} `}></div>
+  </div>
+);
+
 const SkillContainer = (props) => {
-  const { name, icon, rating, description, absolutePosition } = props;
+  const { name, icon, rating, description, absolutePosition, order } = props;
+  console.log(order);
   return (
     <div
       className="skillContainer"
@@ -40,6 +62,8 @@ const SkillContainer = (props) => {
         <div>{description}</div>
       </div>
       <hr className="skillContainerRedBlock" />
+      {/* !! fix the positions of every electric line */}
+      <ElectricLines order={order} />
     </div>
   );
 };
