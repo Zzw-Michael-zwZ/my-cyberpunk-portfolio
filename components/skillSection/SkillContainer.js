@@ -2,7 +2,7 @@ import css from "./electricLines.module.css";
 
 const SkillContainerSVG = () => (
   <svg
-    className="skillContainerSVGBG"
+    className={css.skillContainerSVGBG}
     width="221"
     height="132"
     viewBox="0 0 221 132"
@@ -42,14 +42,14 @@ const SkillContainer = (props) => {
   console.log(order);
   return (
     <div
-      className="skillContainer"
+      className={css.skillContainer}
       style={{ top: absolutePosition[0], left: absolutePosition[1] }}
     >
       <SkillContainerSVG />
       <div className="home-skill-name">
         <div>{name}</div>
       </div>
-      <div className="skillScoreContainer">
+      <div className={css.skillScoreContainer}>
         <div className="home-vector">
           <img alt={name} src={icon} />
         </div>
@@ -58,11 +58,11 @@ const SkillContainer = (props) => {
         <div className="home-text55">5</div>
       </div>
 
-      <div className="home-skill-desc">
+      <div className={css.skillDescription}>
         <div>{description}</div>
       </div>
-      <hr className="skillContainerRedBlock" />
-      {/* !! fix the positions of every electric line */}
+      <hr className={css.skillContainerRedBlock} />
+
       <ElectricLines order={order} />
     </div>
   );

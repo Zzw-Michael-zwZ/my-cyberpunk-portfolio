@@ -1,3 +1,108 @@
+.skillContainer {
+  /* top: 14.62744140625px;
+    left: 274.5869140625px; */
+  width: 218px;
+  height: 138px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: transparent;
+  flex-direction: column;
+  justify-content: center;
+  cursor: none;
+}
+
+.skillContainer::after {
+  content: "";
+  width: 50%;
+  height: 60%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  z-index: -2;
+  opacity: 0;
+  box-shadow: 0px 0px 30px #b2d3e8, 0px 0px 88px 38px #499bce;
+
+  transition: 580ms;
+}
+
+.skillContainer:hover::after {
+  opacity: 1;
+}
+
+.skillScoreContainer {
+  width: 48px;
+  height: 24px;
+  margin: 18px 0;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: flex-start;
+  transition: 180ms;
+}
+
+.skillContainer:hover .skillScoreContainer {
+  margin: 8px 0;
+}
+
+.skillContainerSVGBG {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: absolute;
+  stroke: #563547;
+  stroke-width: 1.8px;
+}
+
+.skillContainer:hover .skillContainerSVGBG {
+  stroke: #b2d3e8;
+  stroke-width: 0.5px;
+}
+
+.skillDescription {
+  color: var(--dl-color-default-white85primary);
+  width: 162px;
+  height: 0px;
+  opacity: 0%;
+  font-size: 11px;
+  text-align: center;
+  font-family: Play;
+  /* text-shadow: 0px 0px 11.6012px rgba(178, 211, 232, 0.5),
+    0px 0px 30.9366px rgba(73, 155, 206, 0.5); */
+  transition: 380ms;
+  overflow: hidden;
+}
+
+.skillContainer:hover .skillDescription {
+  height: 30px;
+  opacity: 100%;
+}
+
+.skillContainerRedBlock {
+  width: 75px;
+  height: 11px;
+  display: flex;
+  position: absolute;
+  bottom: -3.5px;
+  align-items: center;
+  border-color: var(--dl-color-default-blandpurple);
+  border-style: solid;
+  border-width: 1px;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--dl-color-default-darkred);
+  transition: 380ms;
+}
+
+.skillContainer:hover .skillContainerRedBlock {
+  transform: translateY(80%);
+  border-color: #b2d3e8;
+}
+
 .electricLinesContainer {
   width: 200px;
   height: 44.5px;
@@ -34,6 +139,13 @@
   height: 0.6px;
   position: absolute;
   background-color: var(--dl-color-default-darkred);
+  transition: 580ms;
+}
+
+.skillContainer:hover .electricLine {
+  background-color: var(--dl-color-default-lightblue91primary);
+  filter: drop-shadow(0px 0px 15px rgba(178, 211, 232, 0.5))
+    drop-shadow(0px 0px 40px rgba(73, 155, 206, 0.5));
 }
 
 .Line1 {
