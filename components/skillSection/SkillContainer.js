@@ -38,8 +38,15 @@ const ElectricLines = ({ order }) => (
 );
 
 const SkillContainer = (props) => {
-  const { name, icon, rating, description, absolutePosition, order } = props;
-  console.log(order);
+  const {
+    name = "",
+    icon = "",
+    rating = "",
+    description = "",
+    absolutePosition = ["none", "none"],
+    order = "",
+  } = props;
+
   return (
     <div
       className={css.skillContainer}

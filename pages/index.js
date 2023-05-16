@@ -231,13 +231,13 @@ const Home = (props) => {
           <section className="home-contact">
             <div
               id="contactContentContainer"
-              className="home-contact-content-container glassBox"
+              className="contactContentContainer glassBox"
             >
               <h1 className="home-text73">
                 <span>CONTACT</span>
               </h1>
               <div className="home-container56">
-                <div className="home-name1">
+                <div className="home-name1 contactInputContainer">
                   <span className="home-text75">
                     <span>Name</span>
                   </span>
@@ -247,11 +247,9 @@ const Home = (props) => {
                     className="home-contact-input input"
                   />
                 </div>
-                <div className="home-email">
+                <div className="home-email contactInputContainer">
                   <span className="home-text77">
                     <span>Email</span>
-                    <br></br>
-                    <br></br>
                   </span>
                   <input
                     type="text"
@@ -260,11 +258,9 @@ const Home = (props) => {
                   />
                 </div>
               </div>
-              <div className="home-subject">
+              <div className="home-subject contactInputContainer">
                 <span className="home-text81">
                   <span>Subject</span>
-                  <br></br>
-                  <br></br>
                 </span>
                 <input
                   type="text"
@@ -272,7 +268,7 @@ const Home = (props) => {
                   className="home-contact-input2 input"
                 />
               </div>
-              <div className="home-message">
+              <div className="home-message contactInputContainer">
                 <span className="home-text85">Message</span>
                 <textarea
                   placeholder="placeholder"

@@ -1,12 +1,9 @@
 .skillContainer {
-  /* top: 14.62744140625px;
-    left: 274.5869140625px; */
   width: 218px;
   height: 138px;
   display: flex;
   position: absolute;
   align-items: center;
-  flex-shrink: 0;
   border-color: transparent;
   flex-direction: column;
   justify-content: center;
@@ -27,6 +24,15 @@
   box-shadow: 0px 0px 30px #b2d3e8, 0px 0px 88px 38px #499bce;
 
   transition: 580ms;
+}
+
+@media (max-width: 991px) {
+  .skillContainer {
+    margin-bottom: 18px;
+    position: relative;
+    top: 0 !important;
+    left: 0 !important;
+  }
 }
 
 .skillContainer:hover::after {
@@ -109,6 +115,12 @@
   display: flex;
   z-index: -2;
   position: absolute;
+}
+
+@media (max-width: 991px) {
+  .electricLinesContainer {
+    display: none;
+  }
 }
 
 .electricLinesContainer1 {

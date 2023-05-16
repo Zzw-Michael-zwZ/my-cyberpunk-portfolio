@@ -1,5 +1,6 @@
 import Image from "next/image";
 import SkillContainer from "./SkillContainer";
+import { useEffect, useState } from "react";
 
 const skillData = [
   {
@@ -31,74 +32,68 @@ const skillData = [
     absolutePosition: [200, -180],
   },
 ];
+
+const SkillTree = () => {
+  const [screenWidth, setScreenWidth] = useState(1000);
+
+  const handleResize = () => {
+    setScreenWidth(window.screen.width);
+  };
+
+  // gets realtime screen width
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+    console.log("1");
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+  console.log(screenWidth);
+
+  return (
+    <div className="home-placeholder">
+      <div className="home-container04">
+        <span className="home-text48">
+          <span>Skill Tree</span>
+        </span>
+      </div>
+      {skillData.map((skill, index) => {
+        return (
+          <SkillContainer
+            key={skill.name + index}
+            order={index + 1}
+            {...skill}
+          />
+        );
+      })}
+    </div>
+  );
+
+  return (
+    <div>
+      {skillData.map((skill, index) => {
+        return (
+          <SkillContainer
+            key={skill.name + index}
+            order={index + 1}
+            {...skill}
+          />
+        );
+      })}
+    </div>
+  );
+};
+
 const SkillSection = (props) => {
   return (
     <section className="home-skills">
       <div
         id="skillsContentContainer"
-        className="home-skills-content-container glassBox"
+        className="glassBox home-skills-content-container "
       >
-        {/* if mobile remove this */}
-        <div className="home-placeholder">
-          <div className="home-container04">
-            <span className="home-text48">
-              <span>Skill Tree</span>
-            </span>
-          </div>
-
-          <div className="home-electric-lines2">
-            <div className="home-container17"></div>
-            <div className="home-container18"></div>
-            <div className="home-container19"></div>
-            <div className="home-container20"></div>
-            <div className="home-container21"></div>
-            <div className="home-container22"></div>
-            <div className="home-container23"></div>
-            <div className="home-container24"></div>
-            <div className="home-container25"></div>
-            <div className="home-container26"></div>
-            <div className="home-container27"></div>
-            <div className="home-container28"></div>
-          </div>
-          <div className="home-electric-lines3">
-            <div className="home-container29"></div>
-            <div className="home-container30"></div>
-            <div className="home-container31"></div>
-            <div className="home-container32"></div>
-            <div className="home-container33"></div>
-            <div className="home-container34"></div>
-            <div className="home-container35"></div>
-            <div className="home-container36"></div>
-            <div className="home-container37"></div>
-            <div className="home-container38"></div>
-            <div className="home-container39"></div>
-            <div className="home-container40"></div>
-          </div>
-          <div className="home-electric-lines4">
-            <div className="home-container41"></div>
-            <div className="home-container42"></div>
-            <div className="home-container43"></div>
-            <div className="home-container44"></div>
-            <div className="home-container45"></div>
-            <div className="home-container46"></div>
-            <div className="home-container47"></div>
-            <div className="home-container48"></div>
-            <div className="home-container49"></div>
-            <div className="home-container50"></div>
-            <div className="home-container51"></div>
-            <div className="home-container52"></div>
-          </div>
-          {skillData.map((skill, index) => {
-            return (
-              <SkillContainer
-                key={skill.name + index}
-                order={index + 1}
-                {...skill}
-              />
-            );
-          })}
-        </div>
-        <h1 className="home-text72">CHARACTER SKILLS</h1>
+        <h1 className="skillContainerTitle">CHARACTER SKILLS</h1>
+        <SkillTree />
         <a href="#statsContentContainer" className="home-nav-button navBlock">
           <Image
             alt="Arrow17321"

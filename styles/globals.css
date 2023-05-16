@@ -68,7 +68,6 @@
   padding: 0.5rem 1rem;
   border-color: var(--dl-color-gray-black);
   border-width: 1px;
-  border-radius: 4px;
   background-color: var(--dl-color-gray-white);
 }
 .textarea {
@@ -77,7 +76,6 @@
   padding: 0.5rem;
   border-color: var(--dl-color-gray-black);
   border-width: 1px;
-  border-radius: 4px;
   background-color: var(--dl-color-gray-white);
 }
 .list {

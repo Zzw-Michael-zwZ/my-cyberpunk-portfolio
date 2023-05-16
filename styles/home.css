@@ -473,6 +473,7 @@
   justify-content: flex-start;
   z-index: 2;
 }
+
 .home-placeholder {
   top: 193.9853515625px;
   left: 365.033203125px;
@@ -481,9 +482,8 @@
   display: flex;
   position: absolute;
   align-items: flex-start;
-  flex-shrink: 0;
-  border-color: transparent;
 }
+
 .home-container04 {
   width: 155px;
   height: 155px;
@@ -1261,7 +1261,7 @@
   text-decoration: none;
 }
 
-.home-text72 {
+.skillContainerTitle {
   color: var(--dl-color-default-brightred);
   width: 100%;
   font-size: 38px;
@@ -1338,11 +1338,29 @@
   background-size: cover;
   justify-content: center;
 }
-.home-contact-content-container {
+.contactContentContainer {
   gap: 18px;
   width: 880px;
   z-index: 2;
 }
+.contactContentContainer input,
+.contactContentContainer textarea {
+  color: #c7c7bd;
+  width: 100%;
+  border-bottom: solid 1px #737473;
+}
+
+.contactContentContainer input:focus,
+.contactContentContainer textarea:focus {
+  outline: none;
+  border-bottom: solid 1px #c7c7bd;
+}
+
+.contactInputContainer:focus-within span {
+  color: #c7c7bd;
+  font-weight: bold;
+}
+
 .home-text73 {
   color: var(--dl-color-default-brightred);
   font-size: 38px;
@@ -1357,14 +1375,13 @@
   display: flex;
   justify-content: space-between;
 }
+
 .home-name1 {
   width: 48%;
   height: 55px;
   display: flex;
-  border-color: #737473;
   flex-direction: column;
   justify-content: space-between;
-  border-bottom-width: 0.8px;
 }
 .home-text75 {
   color: rgba(216, 216, 216, 0.47999998927116394);
@@ -1383,10 +1400,9 @@
   width: 48%;
   height: 55px;
   display: flex;
-  border-color: #737473;
+
   flex-direction: column;
   justify-content: space-between;
-  border-bottom-width: 0.8px;
 }
 .home-text77 {
   color: rgba(216, 216, 216, 0.48);
@@ -1405,10 +1421,9 @@
   width: 100%;
   height: 55px;
   display: flex;
-  border-color: #737473;
+
   flex-direction: column;
   justify-content: space-between;
-  border-bottom-width: 0.8px;
 }
 .home-text81 {
   color: rgba(216, 216, 216, 0.48);
@@ -1427,10 +1442,8 @@
   width: 100%;
   height: 312px;
   display: flex;
-  border-color: #737473;
   flex-direction: column;
   justify-content: space-between;
-  border-bottom-width: 0.8px;
 }
 .home-text85 {
   color: rgba(216, 216, 216, 0.48);
@@ -1442,6 +1455,7 @@
   border: none;
   height: 100%;
   padding: 0;
+  padding-top: 18px;
   font-size: 18px;
   background: none;
   margin-bottom: 2px;
@@ -1514,9 +1528,7 @@
   .home-stats-content-container {
     max-width: 95%;
   }
-  .home-skills {
-    display: none;
-  }
+
   .home-nav-button {
     top: auto;
     left: 88%;
@@ -1530,7 +1542,7 @@
     border-radius: 0 0 8px 8px;
     border-left-width: revert;
   }
-  .home-contact-content-container {
+  .contactContentContainer {
     max-width: 95%;
   }
   .home-nav-button2 {
