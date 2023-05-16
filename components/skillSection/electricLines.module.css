@@ -197,3 +197,6 @@
 .Line12 {
   top: 26.5px;
 }
+
+@media (max-width: 479px) {
+}

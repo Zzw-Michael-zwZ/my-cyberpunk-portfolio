@@ -1742,6 +1742,21 @@
   .home-text30 {
     width: 62%;
   }
+
+  .home-nav-button {
+    width: 47px;
+    height: 55px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .home-nav-button1 {
+    width: 47px;
+    height: 55px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
   .home-container56 {
     gap: 8px;
     flex-direction: column;

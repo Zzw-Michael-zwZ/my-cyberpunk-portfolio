@@ -105,7 +105,7 @@ const SkillSection = (props) => {
         </a>
         <a
           href="#contactContentContainer"
-          className="home-nav-button1 navBlock "
+          className=" navBlock home-nav-button1"
         >
           <img alt="Arrow" src="/images/arrow.svg" className="home-arrow11" />
         </a>

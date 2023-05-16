@@ -35,3 +35,9 @@
     margin-bottom: 58px;
   }
 }
+
+@media (max-width: 479px) {
+  .home-placeholder {
+    gap: 0px;
+  }
+}
